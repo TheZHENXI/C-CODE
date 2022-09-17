@@ -29,7 +29,7 @@ int main()
     for(int i =0;i < line;i++)
     {
         //每行先打印空格
-        for(int j =0 ;j < line-i;j++)
+        for(int j =0 ;j < line-1-i;j++)
         {
             printf(" ");
         }
