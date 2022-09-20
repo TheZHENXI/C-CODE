@@ -25,8 +25,6 @@ char* my_strstr(const char* s1,const char* s2)
         order2 = (char*)s2;
         while(*order1 && *order2 && *order1 == *order2)
         {
-            if(*order2 == '\0') //针对”bc“ 和”bcc“这种的情况，提前结束
-                return NULL;
             order1++;
             order2++;
         }
