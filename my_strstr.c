@@ -32,6 +32,8 @@ char* my_strstr(const char* s1,const char* s2)
         {
             return ret;    //找到子串
         }
+        if(*order2 == '\0') //针对”bc“ 和”bcc“这种的情况，提前结束
+            return NULL;
         ret++;
     }
     return NULL;
